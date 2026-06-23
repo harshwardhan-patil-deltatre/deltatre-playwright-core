@@ -1,0 +1,23 @@
+{
+  "name": "deltatre-playwright-core",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript test framework with page object model pattern",
+  "author": "QA Team",
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/test-runner.js",
+    "test:smoke": "cross-env TYPE=smoke ENV=staging node scripts/test-runner.js",
+    "test:regression": "cross-env TYPE=regression ENV=staging node scripts/test-runner.js",
+    "test:dev": "cross-env ENV=dev node scripts/test-runner.js",
+    "test:staging": "cross-env ENV=staging node scripts/test-runner.js",
+    "test:prod": "cross-env ENV=production node scripts/test-runner.js",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.0.0",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
