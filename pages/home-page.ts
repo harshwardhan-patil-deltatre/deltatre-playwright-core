@@ -7,7 +7,7 @@ export class HomePage {
 
   constructor(page: Page) {
     this.page = page;
-    this.scheduleNavLink = page.getByRole('link', { name: 'Schedule' });
+    this.scheduleNavLink = page.getByRole('link', { name: 'Schedule', exact: true });
     this.headerLogo = page.locator("//a[@title='Major League Soccer']");
   }
 
